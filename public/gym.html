@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=" bg-slate-100 dark:bg-slate-900">
+
+  <!-- navbar -->
+  <nav class="flex justify-between bg-slate-200 dark:bg-gray-700 text-slate-900  dark:text-white w-screen">
+    <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+      <a class="text-3xl font-bold font-heading" href="#">
+        <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+      </a>
+      <!-- Nav Links -->
+      <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-14">
+        <li><a class="hover:text-slate-500 dark:hover:text-gray-200" href="index.html">Home</a></li>
+        <li><a class="hover:text-slate-500 dark:hover:text-gray-200" href="#">Shop</a></li>
+        <li><a class="hover:text-slate-500 dark:hover:text-gray-200" href="#">Categories</a></li>
+        <li><a class="hover:text-slate-500 dark:hover:text-gray-200" href="#">Contact Us</a></li>
+      </ul>
+      <!-- Header Icons -->
+      <div class="hidden xl:flex items-center space-x-5">
+
+        <!-- Sign In / Register      -->
+        <a class="flex items-center hover:text-slate-500 dark:hover:text-gray-200" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-gray-700 dark:text-white hover:text-slate-500 dark:hover:text-gray-200" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+
+        <a class="flex items-center hover:text-slate-500 dark:hover:text-gray-200" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:text-white" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <span class="flex absolute -mt-5 ml-4">
+            <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+            </span>
+          </span>
+        </a>
+
+        <img src="/icon-moon.svg" alt="" class="moon cursor-pointer" />
+        <img src="/icon-sun.svg" alt="" class="sun cursor-pointer" />
+      </div>
+    </div>
+    <!-- Responsive navbar -->
+    <a class="xl:hidden flex mr-6 items-center" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 text-gray-700 dark:text-white hover:text-slate-500 dark:hover:text-gray-200" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+      <span class="flex absolute -mt-5 ml-4">
+        <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+        </span>
+      </span>
+
+    </a>
+    <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 text-gray-700 dark:text-white hover:text-slate-500 dark:hover:text-gray-200" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+
+    </a>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Landing Page -->
+  <section class="overflow-hidden">
+    <div class="flex items-center space-x-2 text-gray-400 text-sm max-w-7xl ml-4 px-10 sm:px-6 lg:px-8 my-2 mb-2">
+      <a href="/public/index.html" class="hover:underline hover:text-gray-600">Home</a>
+      <span>
+        <svg class="h-5 w-5 leading-none text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </span>
+      <a href="/public/gym.html" class="hover:underline hover:text-gray-600">Tools Gym Store</a>
+    </div>
+    <div class="flex flex-wrap p-10 -m-4">
+      <div class="w-full lg:w-5/12 p-4">
+        <a href="#" class="group">
+          <div class="relative overflow-hidden rounded-2xl" style="height:600px;">
+            <img
+              class="absolute inset-0 rounded-2xl w-full h-full object-cover transform group-hover:scale-105 transition duration-200"
+              src="https://i.pinimg.com/564x/7c/65/1c/7c651c1b9deb7a2ae1f55237df917a84.jpg" alt="">
+            <div class="absolute bottom-8 left-8">
+              <h2 class="font-heading text-white text-6xl sm:text-8xl uppercase max-w-xs">Gym Tools Store</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="w-full lg:w-7/12 p-4">
+        <div class="bg-slate-500 rounded-2xl flex flex-col justify-between h-full p-8">
+          <h2 class=" text-gray-200  font-heading text-6xl sm:text-8xl uppercase max-w-2xl">you can make bigger muscles
+            and Buy Now
+          </h2>
+          <div>
+            <p class="text-gray-200 text-lg font-semibold mb-6 max-w-xl">start building the body you've always wanted
+              today</p>
+            <a href="#"
+              class="bg-gray-900 rounded-full hover:bg-gray-800 focus:ring-4 focus:ring-gray-200 text-white text-sm font-semibold px-4 h-12 inline-flex items-center transition duration-200">Shop
+              Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class=" text-gray-900 dark:text-white ml-11 text-4xl md:text-5xl font-bold font-heading my-2"
+      data-config-id="header" data-path="0.0.0">
+      Brands/
+    </h2>
+    <div class="flex flex-wrap items-center p-10 -m-4 justify-center dark: bg-slate-300 dark:bg-gray-500 my-3">
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 p-4">
+        <img class="flex-shrink-0 h-20 mx-auto"
+          src="https://sportexx.madrasthemes.com/wp-content/uploads/2015/07/01.png" alt="">
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 p-4">
+        <img class="flex-shrink-0 h-20 mx-auto"
+          src="https://sportexx.madrasthemes.com/wp-content/uploads/2015/07/04.png" alt="">
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 p-4">
+        <img class="flex-shrink-0 h-20 mx-auto"
+          src="https://sportexx.madrasthemes.com/wp-content/uploads/2015/07/02.png" alt="">
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 p-4">
+        <img class="flex-shrink-0 h-11 mx-auto"
+          src="https://sportexx.madrasthemes.com/wp-content/uploads/2015/07/03.png" alt="">
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 p-4">
+        <img class="flex-shrink-0 h-20 mx-auto"
+          src="https://sportexx.madrasthemes.com/wp-content/uploads/2015/07/05.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Lading Page End -->
+
+
+
+  <section class="py-20">
+    <div class="container mx-auto px-4 my-2">
+      <h2 class="mb-16 md:mb-24 text-4xl md:text-5xl font-bold font-heading text-gray-900 dark:text-white">
+        Discover our products</h2>
+      <div class="flex flex-wrap -mx-3 mb-24">
+        <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6 lg:mb-0">
+          <div class="p-6 bg-slate-200  dark:bg-gray-700">
+            <span
+              class="px-2 py-1 text-xs font-bold font-heading border-2 border-red-500 rounded-full text-red-500 bg-white">-15%</span>
+            <a class="block px-6 mt-6 mb-2" href="product-gym/dumbles.html">
+              <img class="mb-5 mx-auto h-56 w-full object-contain"
+                src="https://down-id.img.susercontent.com/file/id-11134207-7r98s-llerg7cwgitzb7" alt="">
+              <h3 class="mb-2 text-xl font-bold font-heading text-gray-700 dark:text-white">set of dumbbells.</h3>
+              <p class="text-lg font-bold font-heading text-red-500">
+                <span>$29.89</span>
+                <span class="text-xs text-gray-500 font-semibold font-heading line-through">$33.69</span>
+              </p>
+            </a>
+            <a class="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:text-white" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6 lg:mb-0" data-path="0.0.1.1">
+          <div class="p-6 bg-slate-200 dark:bg-gray-700" data-path="0.0.1.1.0">
+            <span
+              class="px-2 py-1 text-xs font-bold font-heading border-2 border-red-500 rounded-full text-red-500 bg-white"
+              data-config-id="badge2" data-path="0.0.1.1.0.0">-20%</span>
+            <a class="block px-6 mt-6 mb-2" href="#" data-path="0.0.1.1.0.1">
+              <img class="mb-5 mx-auto h-56 w-full object-contain"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6JgrdiatvlZOJGVDXVfvLi0VCtOoOV5cg-VBhW0dztBWD1QjUIfkwSwz2TCgfR6lk3C0&usqp=CAU"
+                alt="" data-config-id="image2" data-path="0.0.1.1.0.1.0">
+              <h3 class="mb-2 text-xl font-bold font-heading text-gray-700 dark:text-white" data-config-id="title2"
+                data-path="0.0.1.1.0.1.1">Hand
+                grip Strengthener</h3>
+              <p class="text-lg font-bold font-heading text-red-500" data-path="0.0.1.1.0.1.2">
+                <span data-config-id="price2" data-path="0.0.1.1.0.1.2.0">$14.30</span>
+                <span class="text-xs text-gray-500 font-semibold font-heading line-through" data-config-id="price2-old"
+                  data-path="0.0.1.1.0.1.2.1">$15.90</span>
+              </p>
+            </a>
+            <a class="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
+              href="#" data-path="0.0.1.1.0.2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:text-white" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6 md:mb-0" data-path="0.0.1.2">
+          <div class="p-6 bg-slate-200 dark:bg-gray-700" data-path="0.0.1.2.0">
+            <span class="px-2 py-1" data-path="0.0.1.2.0.0"></span>
+            <a class="block px-6 mt-6 mb-2" href="#" data-path="0.0.1.2.0.1">
+              <img class="mb-5 mx-auto h-56 w-full object-contain"
+                src="https://i5.walmartimages.com/asr/6f6a76a2-d70f-403e-adda-a8b3cbbda1d8.c21d9d428d3467da56161cbaebb9b567.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+                alt="" data-config-id="image3" data-path="0.0.1.2.0.1.0">
+              <h3 class="mb-2 text-xl font-bold font-heading text-gray-700 dark:text-white" data-config-id="title3"
+                data-path="0.0.1.2.0.1.1">Heavy
+                Duty Punching Bag</h3>
+              <p class="text-lg font-bold font-heading text-red-500" data-path="0.0.1.2.0.1.2">
+                <span data-config-id="price3" data-path="0.0.1.2.0.1.2.0">$34.89</span>
+                <span class="text-xs text-gray-500 font-semibold font-heading line-through" data-config-id="price3-old"
+                  data-path="0.0.1.2.0.1.2.1">$33.69</span>
+              </p>
+            </a>
+            <a class="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
+              href="#" data-path="0.0.1.2.0.2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:text-white" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 px-3" data-path="0.0.1.3">
+          <div class="p-6 bg-slate-200 dark:bg-gray-700" data-path="0.0.1.3.0">
+            <span
+              class="px-2 py-1 text-xs font-bold font-heading border-2 border-blue-300 rounded-full text-blue-300 bg-white"
+              data-config-id="badge4" data-path="0.0.1.3.0.0">NEW</span>
+            <a class="block px-6 mt-6 mb-2" href="product-gym/jumping.html" data-path="0.0.1.3.0.1">
+              <img class="mb-5 mx-auto h-56 w-full object-contain"
+                src="https://down-id.img.susercontent.com/file/587e9625e1b6f38b1b9bd8617b09c47e" alt=""
+                data-config-id="image4" data-path="0.0.1.3.0.1.0">
+              <h3 class="mb-2 text-xl font-bold font-heading text-gray-700 dark:text-white" data-config-id="title4"
+                data-path="0.0.1.3.0.1.1">
+                Jumping Training Speed</h3>
+              <p class="text-lg font-bold font-heading text-red-500" data-path="0.0.1.3.0.1.2">
+                <span data-config-id="price4" data-path="0.0.1.3.0.1.2.0">$19.90</span>
+                <span class="text-xs text-gray-500 font-semibold font-heading line-through" data-config-id="price4-old"
+                  data-path="0.0.1.3.0.1.2.1">$33.69</span>
+              </p>
+            </a>
+            <a class="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
+              href="#" data-path="0.0.1.3.0.2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:text-white" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Products Hidden -->
+
+
+      <div id="more-products" class="hidden">
+
+        <div class="flex flex-wrap -mx-3 mb-24" data-path="0.0.1">
+          <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6 lg:mb-0" data-path="0.0.1.0">
+            <div class="p-6 bg-slate-200 dark:bg-gray-700" data-path="0.0.1.0.0">
+              <span
+                class="px-2 py-1 text-xs font-bold font-heading border-2 border-red-500 rounded-full text-red-500 bg-white"
+                data-config-id="badge1" data-path="0.0.1.0.0.0">-19%</span>
+              <a class="block px-6 mt-6 mb-2" href="#" data-path="0.0.1.0.0.1">
+                <img class="mb-5 mx-auto h-56 w-full object-contain"
+                  src="https://d1wwxmucvg1t4q.cloudfront.net/listing/x576/photo-246537.jpg" alt=""
+                  data-config-id="image1" data-path="0.0.1.0.0.1.0">
+                <h3 class="mb-2 text-xl font-bold font-heading text-gray-700 dark:text-white" data-config-id="title1"
+                  data-path="0.0.1.0.0.1.1">Miscellaneous boxing equipment</h3>
+                <p class="text-lg font-bold font-heading text-red-500" data-path="0.0.1.0.0.1.2">
+                  <span data-config-id="price1" data-path="0.0.1.0.0.1.2.0">$30.89</span>
+                  <span class="text-xs text-gray-500 font-semibold font-heading line-through"
+                    data-config-id="price1-old" data-path="0.0.1.0.0.1.2.1">$50.69</span>
+                </p>
+              </a>
+              <a class="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6 lg:mb-0" data-path="0.0.1.1">
+            <div class="p-6 bg-slate-200 dark:bg-gray-700" data-path="0.0.1.1.0">
+              <span
+                class="px-2 py-1 text-xs font-bold font-heading border-2 border-red-500 rounded-full text-red-500 bg-white"
+                data-config-id="badge2" data-path="0.0.1.1.0.0">-20%</span>
+              <a class="block px-6 mt-6 mb-2" href="#" data-path="0.0.1.1.0.1">
+                <img class="mb-5 mx-auto h-56 w-full object-contain"
+                  src="https://d1wwxmucvg1t4q.cloudfront.net/listing/x576/photo-167271.jpg" alt=""
+                  data-config-id="image2" data-path="0.0.1.1.0.1.0">
+                <h3 class="mb-2 text-xl font-bold font-heading text-gray-700 dark:text-white" data-config-id="title2"
+                  data-path="0.0.1.1.0.1.1">
+                  Inotec 28 machines, 18 strength machines</h3>
+                <p class="text-lg font-bold font-heading text-red-500" data-path="0.0.1.1.0.1.2">
+                  <span data-config-id="price2" data-path="0.0.1.1.0.1.2.0">$50.30</span>
+                  <span class="text-xs text-gray-500 font-semibold font-heading line-through"
+                    data-config-id="price2-old" data-path="0.0.1.1.0.1.2.1">$90.90</span>
+                </p>
+              </a>
+              <a class="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6 md:mb-0" data-path="0.0.1.2">
+            <div class="p-6 bg-slate-200 dark:bg-gray-700" data-path="0.0.1.2.0">
+              <span class="px-2 py-1" data-path="0.0.1.2.0.0"></span>
+              <a class="block px-6 mt-6 mb-2" href="#" data-path="0.0.1.2.0.1">
+                <img class="mb-5 mx-auto h-56 w-full object-contain"
+                  src="https://d1wwxmucvg1t4q.cloudfront.net/listing/x576/photo-156771.jpg" alt=""
+                  data-config-id="image3" data-path="0.0.1.2.0.1.0">
+                <h3 class="mb-2 text-xl font-bold font-heading text-gray-700 dark:text-white" data-config-id="title3"
+                  data-path="0.0.1.2.0.1.1">NordicTrack EXP Series Treadmills
+                </h3>
+                <p class="text-lg font-bold font-heading text-red-500" data-path="0.0.1.2.0.1.2">
+                  <span data-config-id="price3" data-path="0.0.1.2.0.1.2.0">$40.89</span>
+                </p>
+              </a>
+              <a class="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 px-3" data-path="0.0.1.3">
+            <div class="p-6 bg-slate-200 dark:bg-gray-700" data-path="0.0.1.3.0">
+              <span
+                class="px-2 py-1 text-xs font-bold font-heading border-2 border-blue-300 rounded-full text-blue-300 bg-white"
+                data-config-id="badge4" data-path="0.0.1.3.0.0">NEW</span>
+              <a class="block px-6 mt-6 mb-2" href="#" data-path="0.0.1.3.0.1">
+                <img class="mb-5 mx-auto h-56 w-full object-contain"
+                  src="https://d1wwxmucvg1t4q.cloudfront.net/listing/x576/photo-104228.jpg" alt=""
+                  data-config-id="image4" data-path="0.0.1.3.0.1.0">
+                <h3 class="mb-2 text-xl font-bold font-heading text-gray-700 dark:text-white" data-config-id="title4"
+                  data-path="0.0.1.3.0.1.1">
+                  Strength Training Machines & Accessories</h3>
+                <p class="text-lg font-bold font-heading text-red-500" data-path="0.0.1.3.0.1.2">
+                  <span data-config-id="price4" data-path="0.0.1.3.0.1.2.0">$199.90</span>
+                  <span class="text-xs text-gray-500 font-semibold font-heading line-through"
+                    data-config-id="price4-old" data-path="0.0.1.3.0.1.2.1">$33.69</span>
+                </p>
+              </a>
+              <a class="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
+              href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" data-path="0.0.2">
+        <button id="load-more-btn"
+          class="inline-block bg-orange-300 hover:bg-orange-400 text-white font-bold font-heading py-6 px-8 rounded-md uppercase">Show
+          More</button>
+      </div>
+      <div class="text-center" data-path="0.0.2">
+        <button id="hidden-button"
+          class=" bg-orange-300 hover:bg-orange-400 text-white font-bold font-heading py-6 px-8 rounded-md uppercase hidden">Hidden
+          More</button>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="/app.js"></script>
+  <script src="/fitur-gym.js"></script>
+</body>
+
+</html>

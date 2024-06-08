@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-zinc-200 dark:bg-slate-900">
+    <!-- navbar -->
+    <nav class="flex justify-between bg-slate-200 text-slate-900 dark:bg-slate-800 dark:text-white w-screen">
+        <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+            <a class="text-3xl font-bold font-heading" href="#">
+                <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+            </a>
+            <!-- Nav Links -->
+            <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-14">
+                <li>
+                    <a class="hover:text-slate-500 dark:hover:text-gray-200" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:text-slate-500 dark:hover:text-gray-200" href="#">Shop</a>
+                </li>
+                <li>
+                    <a class="hover:text-slate-500 dark:hover:text-gray-200" href="#">Categories</a>
+                </li>
+                <li>
+                    <a class="hover:text-slate-500 dark:hover:text-gray-200" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <!-- Header Icons -->
+            <div class="hidden xl:flex items-center space-x-5">
+                <!-- Sign In / Register      -->
+                <a class="flex items-center hover:text-slate-500 dark:hover:text-gray-200" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 hover:text-slate-500 dark:hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </a>
+
+                <a class="flex items-center hover:text-slate-500 dark:hover:text-gray-200" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span class="flex absolute -mt-5 ml-4">
+                        <span
+                            class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                        </span>
+                    </span>
+                </a>
+
+                <img src="/icon-moon.svg" alt="" class="moon cursor-pointer" />
+                <img src="/icon-sun.svg" alt="" class="sun cursor-pointer" />
+            </div>
+        </div>
+        <!-- Responsive navbar -->
+        <a class="xl:hidden flex mr-6 items-center" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-slate-500 dark:hover:text-gray-200"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="flex absolute -mt-5 ml-4">
+                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                </span>
+            </span>
+        </a>
+        <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-slate-500 dark:hover:text-gray-200"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </a>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- banner -->
+    <div class="bg-cover bg-no-repeat bg-center py-36" style="background-image: url('assets/images/banner-bg.png')">
+        <div class="container">
+            
+            <h1 class="text-6xl text-gray-800 font-medium mb-4 capitalize">
+                Clothes Gym Store <br />
+                Gym Outfit products 
+            </h1>
+            <p>
+                Buy the most complete variety of Gym Outfit products online easily, quickly & safely at Global Fitness. 
+                <br />
+                You can find the nearest Gym Outfit seller shop to your location...
+                
+            </p>
+            <div class="mt-12">
+                <a href="#"
+                    class="bg-red-500 border border-red-500 text-white px-8 py-3 font-medium rounded-md hover:bg-transparent hover:text-primary transition duration-200 ease-in-out">Shop
+                    Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- ./banner -->
+
+    <!-- features -->
+    <div class="container py-16">
+        <div class="w-10/12 grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto justify-center">
+            <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+                <img src="assets/images/icons/delivery-van.svg" alt="Delivery" class="w-12 h-12 object-contain" />
+                <div>
+                    <h4 class="font-medium capitalize text-lg text-gray-900 dark:text-white">Free Shipping</h4>
+                    <p class="text-gray-500 dark:text-gray-200 text-sm">Order over $200</p>
+                </div>
+            </div>
+            <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+                <img src="assets/images/icons/money-back.svg" alt="Delivery" class="w-12 h-12 object-contain" />
+                <div>
+                    <h4 class="font-medium capitalize text-lg text-gray-900 dark:text-white">Money Rturns</h4>
+                    <p class="text-gray-500 dark:text-gray-200 text-sm">30 days money returs</p>
+                </div>
+            </div>
+            <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+                <img src="assets/images/icons/service-hours.svg" alt="Delivery" class="w-12 h-12 object-contain" />
+                <div>
+                    <h4 class="font-medium capitalize text-lg text-gray-900 dark:text-white">24/7 Support</h4>
+                    <p class="text-gray-500 dark:text-gray-200 text-sm">Customer support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./features -->
+
+    <div class="flex items-center space-x-2 text-gray-400 text-sm max-w-7xl ml-4 px-10 sm:px-6 lg:px-8 my-2 mb-2">
+        <a href="/public/index.html" class="hover:underline hover:text-gray-600">Home</a>
+        <span>
+            <svg class="h-5 w-5 leading-none text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </span>
+        <a href="/public/clothes.html" class="hover:underline hover:text-gray-600">Clothes Gym Store</a>
+    </div>
+
+    <!-- categories -->
+    <div class="container py-16 mx-10">
+        <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">
+            shop by category
+        </h2>
+        <div class="grid grid-cols-3 gap-2">
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="https://sportexx.madrasthemes.com/wp-content/uploads/2015/04/01.png" alt="category 1"
+                    class="w-1/3" />
+                <a href="#"
+                    class="absolute inset-0 bg-black dark:bg-gray-300 bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Accessories</a>
+            </div>
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="https://sportexx.madrasthemes.com/wp-content/uploads/2015/04/04.png" alt="category 1"
+                    class="w-1/3" />
+                <a href="#"
+                    class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Bags</a>
+            </div>
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="assets/hoodie.png" alt="category 1" class="" width="200px" />
+                <a href="#"
+                    class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Hoodie
+                </a>
+            </div>
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="https://contents.mediadecathlon.com/p1971317/k$b91e4fb7f4cd28d38ff960d5046631be/run900-mid-thick-running-socks-blue.jpg?format=auto&quality=70&f=768x768"
+                    alt="category 1" width="200px" />
+                <a href="#"
+                    class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Shocks</a>
+            </div>
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="https://sportexx.madrasthemes.com/wp-content/uploads/2015/04/051.png" alt="category 1"
+                    class="w-1/3" />
+                <a href="#"
+                    class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">SweatShirts
+                </a>
+            </div>
+            <div class="relative rounded-sm overflow-hidden group">
+                <img src="https://sportexx.madrasthemes.com/wp-content/uploads/2015/04/07.png" alt="category 1"
+                    class="w-1/3" />
+                <a href="#"
+                    class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Leggins</a>
+            </div>
+        </div>
+    </div>
+    <!-- ./categories -->
+
+    <!-- new arrival -->
+    <div class="container pb-16">
+        <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">
+            top new arrival
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/WovenGiletGSBlackA5A6U-BB2J1288_6bea2d6b-821f-456e-96c1-33f339ad4bc8_1200x.jpg?v=1705568057"
+                        alt="product 1" class="w-1/3" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="product-clothes/woven.html"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            Woven Gilet Regular Fit Black
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$65.00</p>
+                        <p class="text-sm text-gray-400 line-through">$70.90</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/PiqueJoggersGSTitaniumBlueGSFreshBlueA6A6T-UCWG-1744_1200x.jpg?v=1707211954"
+                        alt="product 1" class="w-1/3" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            Sport Run Pants Regular Fit
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$75.00</p>
+                        <p class="text-sm text-gray-400 line-through">$90.90</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/TrainingOversizedFleeceHoodie-GSBlack-B5A7N-BB2J-0887_640x.jpg?v=1687355502"
+                        alt="product 1" class="w-full" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            REST DAY SWEATS HOODIE
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$65.00</p>
+                        <p class="text-sm text-gray-400 line-through">$70.90</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/EverydaySeamlessLeggingsGSNavyB7A3L-UB9P-1247.jpg?v=1690107788"
+                        alt="product 1" class="w-full" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            EVERYDAY SEAMLESS LEGGINGS
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$45.00</p>
+                        <p class="text-sm text-gray-400 line-through">$55.90</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- ./new arrival -->
+
+    <!-- ads -->
+    <div class="container pb-16">
+        <a href="#">
+            <img src="assets/images/offer.png" alt="ads" class="w-full" />
+        </a>
+    </div>
+    <!-- ./ads -->
+
+    <!-- product -->
+    <div class="container pb-16">
+        <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">
+            recomended for you
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-center">
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayMiniHoldall-GSLightGrey-I2A5Q-GB7K-0252_f010dc19-9231-409f-9b15-57490e531dc4.jpg?v=1695819656"
+                        alt="product 1" class="w-full" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            Everyday Mini Holdall
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$25.00</p>
+                        <p class="text-sm text-gray-400 line-through">$35.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/products/EverydayHoldallMBlackI3A2H-BBBB53.jpg?v=1673528968g"
+                        alt="product 1" class="w-full" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            Medium Everyday Holdall
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$60.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/CrestSsT-ShirtWhiteWhiteA1A3J-WBBM-0610_750x.jpg?v=1704298747" alt="product 1" class="w-full" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            Crest T-shirt
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$28.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/products/TrainingOversizedT-ShirtTeeWhite-B1A7M-WBBM1_750x.jpg?v=1665178790" alt="product 1" class="w-full" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            TRAINING OVERSIZED T-SHIRT
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$30.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/Gfx3PkHeartCrewSocksGSWhite-GSSilverLilac-GSDollyPinkI3A7B-WCMX-0088copy_640x.jpg?v=1706100403" alt="product 1" class="w-full" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            GFX 3pk Crew Socks
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$20.00</p>
+                      
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/CrewSocks3pkGSWhite-GSPebbleGrey-GSDesertBeigeI3A3P-WCCH-0109_a63ef2a4-0bb2-4bfe-9c0d-cc17cd369400_1200x.jpg?v=1696606368" alt="product 1" class="w-full" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            CREW SOCKS 3PK
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$15.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/MetalShakerSteelGreyI2A6L-GBNK.1134_1200x.jpg?v=1704288642" alt="product 1" class="w-full" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            METAL SHAKER
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$28.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="https://cdn.shopify.com/s/files/1/1367/5207/products/LegacyLiftingGloves-BlackI2A7Y-BBBB2_a961dcd7-6707-4a2e-b933-1df3dd930fd5_1200x.jpg?v=1667466275" alt="product 1" class="w-full" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="view product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                            title="add to wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            LEGACY LIFTING GLOVES
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$28.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-red-500 border border-red-500 rounded-b hover:bg-transparent hover:text-red-500 transition duration-200 ease-in-out">Add
+                    to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- ./product -->
+    <script src="/app.js"></script>
+    <script src="https://kit.fontawesome.com/3b46f2e2db.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

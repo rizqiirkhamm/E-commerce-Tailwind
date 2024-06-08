@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=" bg-slate-100 dark:bg-slate-900">
+    <!-- navbar -->
+    <nav class="flex justify-between bg-slate-200 text-slate-900 dark:bg-slate-800 dark:text-white w-screen">
+        <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+            <a class="text-3xl font-bold font-heading" href="#">
+                <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+            </a>
+            <!-- Nav Links -->
+            <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-14">
+                <li><a class="hover:text-slate-500 dark:hover:text-gray-200" href="index">Home</a></li>
+                <li><a class="hover:text-slate-500 dark:hover:text-gray-200" href="#">Shop</a></li>
+                <li><a class="hover:text-slate-500 dark:hover:text-gray-200" href="#">Categories</a></li>
+                <li><a class="hover:text-slate-500 dark:hover:text-gray-200" href="#">Contact Us</a></li>
+            </ul>
+            <!-- Header Icons -->
+            <div class="hidden xl:flex items-center space-x-5">
+
+                <!-- Sign In / Register      -->
+                <a class="flex items-center hover:text-slate-500 dark:hover:text-gray-200" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 hover:text-slate-500 dark:hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </a>
+
+                <a class="flex items-center hover:text-slate-500 dark:hover:text-gray-200" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span class="flex absolute -mt-5 ml-4">
+                        <span
+                            class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                        </span>
+                    </span>
+                </a>
+
+                <img src="/icon-moon.svg" alt="" class="moon cursor-pointer" />
+                <img src="/icon-sun.svg" alt="" class="sun cursor-pointer" />
+            </div>
+        </div>
+        <!-- Responsive navbar -->
+        <a class="xl:hidden flex mr-6 items-center" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-slate-500 dark:hover:text-gray-200"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="flex absolute -mt-5 ml-4">
+                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                </span>
+            </span>
+        </a>
+        <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-slate-500 dark:hover:text-gray-200"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </a>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <section class="space-y-16 mb-10">
+        <div class="relative">
+            <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+                <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+                <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="relative pt-36 ml-auto">
+                    <div class="lg:w-2/3 text-center mx-auto">
+                        <h1 class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">GLOBAL
+                            <span class="text-primary dark:text-white">FITNESS</span></h1>
+                        <p class="mt-8 text-gray-700 dark:text-gray-300">Ready to change your physique, but can't work
+                            out in the gym?</p>
+                        <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                            <button
+                                class="bg-slate-800 hover:bg-slate-900 text-white dark:bg-slate-200 dark:text-black font-bold py-2 px-4 rounded-full animate-pulse">
+                                Get Started a pass
+                            </button>
+
+                            <button
+                                class="overflow-hidden w-40 p-2 h-12 bg-black text-white dark:bg-slate-200 dark:text-black border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group">
+                                50% Diskon
+                                <span
+                                    class="absolute w-44 h-32 -top-8 -left-2 bg-sky-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-right"></span>
+                                <span
+                                    class="absolute w-44 h-32 -top-8 -left-2 bg-sky-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-right"></span>
+                                <span
+                                    class="absolute w-44 h-32 -top-8 -left-2 bg-sky-600 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-right"></span>
+                                <span
+                                    class="group-hover:opacity-100 text-white dark:text-white group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-10 z-10">Explore!</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6">
+            <div class="h-64 rounded-md overflow-hidden bg-cover bg-center"
+                style="background-image: url('https://i.pinimg.com/564x/dc/c9/45/dcc94516c9ef9c1aafa7e43d3e29b78b.jpg')">
+                <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
+                    <div class="px-10 max-w-xl">
+                        <h2 class="text-2xl text-white font-semibold">Tool Gym Store</h2>
+                        <p class="mt-2 text-gray-400">Find various kinds of the best & quality Gym Tool products and equipment safely, easily & quickly on Tokopedia! You can find various kinds of Gym products.</p>
+                        <button
+                            class="flex items-center mt-4 px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                            <a href="gym.html"><span>Shop Now</span></a>
+                            <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="md:flex mt-8 md:-mx-4">
+                <div class="w-full h-64 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2"
+                    style="background-image: url('https://i.pinimg.com/564x/d7/11/9e/d7119e777374833dbffa5480e1c51500.jpg')">
+                    <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
+                        <div class="px-10 max-w-xl">
+                            <h2 class="text-2xl text-white font-semibold">Sport Nutrition Store</h2>
+                            <p class="mt-2 text-gray-400">BODY ATTACK bodybuilding shop and fitness shop for sports nutrition like proteine, creatine, Kre-Alkalyn, weight gainer and diet products.</p>
+                            <button
+                                class="flex items-center mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none">
+                                <a href="nutrition.html"><span>Shop Now</span></a>
+                                <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2"
+                    style="background-image: url('https://i.pinimg.com/564x/2d/8c/b9/2d8cb92b9ca9e6b31cce4384caf89f24.jpg')">
+                    <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
+                        <div class="px-10 max-w-xl">
+                            <h2 class="text-2xl text-white font-semibold">Clothes Gym Store</h2>
+                            <p class="mt-2 text-gray-400">Buy the most complete variety of Gym Outfit products online easily, quickly & safely at Global Fitness. You can find the nearest Gym Outfit seller shop to your location...</p>
+                            <button
+                                class="flex items-center mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none">
+                                <a href="clothes.html"><span>Shop Now</span></a>
+                                <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Landing Page Start -->
+    <section>
+        
+    </section>
+    <!-- Landing Page end -->
+
+    <!-- We have fans start -->
+    <!-- <section>
+        <div class="text-gray-600 dark:text-gray-30oun
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="mb-20 space-y-4 px-6 md:px-0">
+                    <h2 class="text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+                        We have some fans.
+                    </h2>
+                </div>
+                <div class="md:columns-2 lg:columns-3 gap-8 space-y-8">
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1559671811780087810/Y4E8X2do_400x400.jpg"
+                                alt="" width="" height="" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Eric Ampire</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid quo eum
+                            quae quos
+                            illo earum ipsa doloribus nostrum minus libero aspernatur laborum cum, a suscipit, ratione
+                            ea totam ullam!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti
+                            aperiam ab veniam
+                            sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit,
+                            veritatis harum et
+                            rerum.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1372441824560771075/DTcuXT0Z_400x400.jpg"
+                                alt="" width="" height="" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Rodrigo Aguilar</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Creator of Tailwind Awesome</p>
+                            </div>
+                        </div>
+                        <p class="mt-8"> Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis
+                            tempore
+                            cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1362367807887974401/kuJ1OFT1_400x400.jpg"
+                                alt="" width="" height="" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Adam Wathan</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Creator of Tailwindcss</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam
+                            deleniti
+                            aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at
+                            reprehenderit,
+                            veritatis harum et rerum.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1511686703672606725/_DV4Mfjd_400x400.jpg"
+                                alt="" width="" height="" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Dan Kyungu</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam
+                            deleniti
+                            aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at
+                            reprehenderit,
+                            veritatis harum et rerum.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1398547148086681604/ctgizwrN_400x400.jpg"
+                                alt="" width="" height="" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Ben Sulumu</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Manager</p>
+                            </div>
+                        </div>
+                        <p class="mt-8"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam
+                            deleniti
+                            aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at
+                            reprehenderit,
+                            veritatis harum et rerum.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full" src="./images/second_user.webp" alt="" width=""
+                                height="" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Randy Doe</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam
+                            deleniti
+                            aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at
+                            reprehenderit,
+                            veritatis harum et rerum.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- we have fans end -->
+
+    
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
